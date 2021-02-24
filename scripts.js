@@ -1,9 +1,9 @@
 function esPalindromo(cadena) {
   const cadenaLimpia = cadena.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.,:;()_?¿!¡-\s]/g, "");
-  if (cadenaLimpia.toLowerCase()
+  return cadenaLimpia.toLowerCase()
     .split("")
     .reverse()
-    .join("") === cadenaLimpia.toLowerCase()) { return true; } else { return false; }
+    .join("") === cadenaLimpia.toLowerCase();
 }
 
 const miCadena = "hòla ?alóh!";
