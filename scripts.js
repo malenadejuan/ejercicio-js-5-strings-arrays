@@ -9,9 +9,3 @@ const esPalindromo = cadena => {
 const miCadena = "hòla ?alóh!";
 
 console.log(`La frase ${esPalindromo(miCadena) ? "" : "no "}es un palíndromo`);
-
-/* const esPalindromo = cadena => cadena
-  .toLowerCase()
-  .split("")
-  .reverse()
-  .join("") === cadena.toLowerCase();  */
